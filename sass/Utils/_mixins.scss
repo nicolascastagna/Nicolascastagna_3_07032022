@@ -1,0 +1,5 @@
+@mixin box-shadow {
+    box-shadow: (0px, 3px, 10px, $colour-black);
+    background-color: $colour-white;
+    cursor: pointer;
+}
