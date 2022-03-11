@@ -13,7 +13,7 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-h2, h3, p, a {
+h2, h3, p, a, li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -99,6 +99,33 @@ header {
 .button--link {
   color: #fff;
   font-weight: 400;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+}
+footer .bloc_footer {
+  padding: 20px 0px 20px 0px;
+}
+footer .bloc_footer h1 {
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 40px;
+}
+
+.container_footer {
+  line-height: 25px;
+}
+.container_footer li, .container_footer a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.container_footer i {
+  width: 15px;
+  font-size: 12px;
+  margin-right: 8px;
 }
 
 .bloc_functioning {

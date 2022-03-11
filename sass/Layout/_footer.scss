@@ -1,0 +1,31 @@
+footer {
+    background-color: $colour-dark-grey;
+    color: $colour-white;
+
+    .bloc_footer {
+        padding: 20px 0px 20px 0px;
+        
+        h1 {
+            font-size: 20px;
+            font-weight: 100;
+            padding-left: 40px;
+        }
+    }
+}
+.container_footer {
+    line-height: 25px;
+
+    li, a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $colour-white;
+    }
+        
+        i {
+            width: 15px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+    }
+
+    
