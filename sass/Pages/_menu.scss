@@ -12,9 +12,17 @@
     margin: auto;
     h2 {
         font-weight: 800;
+        @include tablet {
+            text-align: center;
+        }
     }
     .menu_list {
         min-width: 270px;
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            display: flex;
+        }
         .menu_new {
             position: absolute;
             top: 15px;
@@ -32,6 +40,9 @@
             height: 270px;
             overflow: hidden;
             border-radius: 20px;
+            @include tablet {
+                width: 47%;
+            }
         }
             article img {
                 width: 100%;
@@ -65,5 +76,110 @@
     font-size: 24px;
 }
 
+/* Pages Menu   */
 
+#bloc_page_menu {
+    max-width: 1400px;
+    min-width: 315px;
+    margin: auto;
+}
+
+#logo_menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 12px;
+    img {
+        height: 30px;
+    }
+}
+
+.return_link {
+    position: relative;
+    i {
+        position: absolute;
+        top: -40px;
+        left: 30px;
+        font-size: 24px;
+    }
+}
+
+.picture_menu {
+    margin: 0;
+    & img {
+        width: 100%;
+        max-height: 260px;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    background-color: $colour-light-grey;
+    top: -55px;
+    padding: 15px;
+    position: relative;
+    border-radius: 50px 50px 0px 0px;
+    height: 1150px;
+    margin-bottom: -55px;
+    .category_order {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .order_menu {
+        @include box-shadow;
+        margin: 20px 0px 20px;
+        h4 {
+            margin: 0;
+            font-size: 16px;
+            @include hidden_text;
+            font-weight: 800;
+        }
+        .order_text {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+            p:nth-child(1) {
+                @include hidden_text
+            }
+                p:nth-child(2) {
+                    font-weight: 900;
+                }
+            
+        }
+    
+ }
+}
+
+.order_menu {
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.title_order {
+    border-bottom: 3px solid #8ed8c6;
+    left: 5px;
+    width: 38px;
+    position: relative;
+}
+
+.menu_container_heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 15px 0px 5px;
+    h1 {
+        font-weight: 500;
+        font-size: 26px;
+    }
+    i {
+        font-size: 24px;
+
+    }
+}
 
