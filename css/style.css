@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.bloc_title .title_adress, .bloc_title, .button_menu {
+.bloc_title .title_adress, .bloc_title, .button_menu, .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,7 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 35px;
   width: 220px;
+  height: 50px;
 }
 .button--link {
   color: #fff;

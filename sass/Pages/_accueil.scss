@@ -14,6 +14,10 @@
     font-size: 16px;
     margin-left: 10px;
     padding-left: 5px;
+    @include tablet {
+        margin: 30px auto;
+        max-width: 675px;
+    }
     &:hover {
         @include box-shadow;
     }
@@ -24,6 +28,10 @@
             width: 28%;
             color: $colour-icons;
             margin-bottom: 2px;
+            @include tablet {
+                width: 50%;
+
+            }
         }
 }
 
@@ -47,6 +55,10 @@
     #title_functioning {
         width: 95%;
         font-weight: 800;
+        @include tablet {
+            text-align: center;
+            padding-left: 40px;
+        }
     }
 }
 
