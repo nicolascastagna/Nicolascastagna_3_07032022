@@ -13,8 +13,10 @@ $colour-icons: #7e7e7e;
 
 $breakpoints: (
   mobile: 768px,
-  tablet: 992px,
+  tablet: 769px,
   laptop: 993px,     
   desktop: 1200px,  
 );
 
+$colour-primary-lighten: lighten($colour-primary, 5%);
+$colour-secondary-lighten: lighten($colour-secondary, 5%);
