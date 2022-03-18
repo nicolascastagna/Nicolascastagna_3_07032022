@@ -400,17 +400,37 @@ footer .bloc_footer h1 {
   height: 1150px;
   margin-bottom: -55px;
 }
+@media screen and (min-width: 769px) {
+  .menu {
+    height: auto;
+  }
+}
 .menu .category_order {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 769px) {
+  .menu .category_order {
+    max-width: 40px;
+    min-width: 40px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #8ed8c6;
+  }
+}
 .menu .order_menu {
   box-shadow: 0px 0px 8px #d2d2d2;
   background-color: #fff;
   cursor: pointer;
   margin: 20px 0px 20px;
+}
+@media screen and (min-width: 769px) {
+  .menu .order_menu {
+    text-align: center;
+    margin: 20px auto 20px;
+    max-width: 750px;
+  }
 }
 .menu .order_menu h4 {
   margin: 0;
@@ -434,6 +454,14 @@ footer .bloc_footer h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 769px) {
+  .menu .order_menu .order_text p:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    width: 100%;
+  }
+}
 .menu .order_menu .order_text p:nth-child(2) {
   font-weight: 900;
 }
@@ -449,6 +477,14 @@ footer .bloc_footer h1 {
   width: 38px;
   position: relative;
 }
+@media screen and (min-width: 769px) {
+  .title_order {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+  }
+}
 
 .menu_container_heart {
   display: flex;
@@ -459,6 +495,12 @@ footer .bloc_footer h1 {
 .menu_container_heart h1 {
   font-weight: 500;
   font-size: 26px;
+}
+@media screen and (min-width: 769px) {
+  .menu_container_heart h1 {
+    width: 62%;
+    text-align: end;
+  }
 }
 .menu_container_heart i {
   font-size: 24px;
