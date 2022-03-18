@@ -57,7 +57,8 @@
         font-weight: 800;
         @include tablet {
             text-align: center;
-            padding-left: 40px;
+            padding-left: 21px;
+            width: 100%;
         }
     }
 }

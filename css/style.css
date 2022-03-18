@@ -246,7 +246,8 @@ footer .bloc_footer h1 {
 @media screen and (min-width: 769px) {
   .container_functioning #title_functioning {
     text-align: center;
-    padding-left: 40px;
+    padding-left: 21px;
+    width: 100%;
   }
 }
 
@@ -498,8 +499,8 @@ footer .bloc_footer h1 {
 }
 @media screen and (min-width: 769px) {
   .menu_container_heart h1 {
-    width: 62%;
-    text-align: end;
+    width: 100%;
+    text-align: center;
   }
 }
 .menu_container_heart i {
