@@ -40,6 +40,10 @@
             height: 270px;
             overflow: hidden;
             border-radius: 20px;
+            &:hover {
+                box-shadow: 0px 0px 18px $colour-border-shadow;
+                filter: brightness(1.08);
+            }
             @include tablet {
                 width: 47%;
             }
@@ -47,7 +51,8 @@
             article img {
                 width: 100%;
                 max-height: 200px;
-                object-fit: cover;              
+                object-fit: cover;   
+                   
             }
     }
 }
