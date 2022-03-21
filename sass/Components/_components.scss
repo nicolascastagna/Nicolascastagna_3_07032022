@@ -1,0 +1,68 @@
+
+.heart_icons {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .heart-empty {
+            opacity: 0;
+            z-index: -1;
+        }
+        .heart-full {
+                transform: scale(1);
+        }
+    }
+
+    .heart-icon {
+        color: transparent;
+        position: absolute;
+    }
+    .heart-empty {
+        transition: all 400ms linear;
+        z-index: 10;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: $colour-black;
+        color: transparent;
+    }
+    .heart-full {
+        transition: 400ms ease-in-out;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+        z-index: 1;
+    }
+}
+
+.menu-anim {
+    animation: progress-menu 300ms;
+    &__2 {
+        animation: progress-menu;
+        animation-duration: 900ms;
+    }
+    &__3 {
+        animation: progress-menu;
+        animation-duration: 1500ms;
+    }
+    &__4 {
+        animation: progress-menu;
+        animation-duration: 2100ms;
+    }
+}
+
+
+@keyframes progress-menu{
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

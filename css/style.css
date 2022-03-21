@@ -427,6 +427,35 @@ template {
   z-index: 1;
 }
 
+.menu-anim {
+  animation: progress-menu 300ms;
+}
+.menu-anim__2 {
+  animation: progress-menu;
+  animation-duration: 900ms;
+}
+.menu-anim__3 {
+  animation: progress-menu;
+  animation-duration: 1500ms;
+}
+.menu-anim__4 {
+  animation: progress-menu;
+  animation-duration: 2100ms;
+}
+
+@keyframes progress-menu {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
 }
