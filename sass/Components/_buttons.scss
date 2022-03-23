@@ -1,35 +1,25 @@
 .button {
-    background: linear-gradient($colour-secondary, $colour-primary);
-    border-radius: 35px;
+    @include btn_bloc_shadow;
     width: 220px;
-    height: 50px;
     @extend %flex_center;
     &--link {
-        color:$colour-white;
-        font-weight: 400;
-        font-size: 16px;
+        @include btn-bloc-size;
         @extend %center;
     }
     &:hover {
-        background: linear-gradient($colour-primary-lighten, $colour-secondary-lighten);
-        box-shadow: 0px 0px 8px $colour-border-shadow;
+        @include btn-bloc-hover;
     }
 }
 
 .button_menu {
-    background: linear-gradient($colour-secondary, $colour-primary);
-    border-radius: 35px;
+    @include btn_bloc_shadow;
     width: 185px;
-    height: 50px;
     margin: 50px auto 30px;
     @extend %flex_center;
     &--link {
-        color:$colour-white;
-        font-weight: 400;
-        font-size: 16px;
+        @include btn-bloc-size;
     }
     &:hover {
-        background: linear-gradient($colour-primary-lighten, $colour-secondary-lighten);
-        box-shadow: 0px 0px 8px $colour-border-shadow;
+        @include btn-bloc-hover;
     }
 }

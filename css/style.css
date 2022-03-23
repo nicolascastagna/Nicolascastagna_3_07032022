@@ -362,10 +362,11 @@ template {
 }
 
 .button {
+  box-shadow: 0px 0px 3px #d2d2d2;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 35px;
-  width: 220px;
   height: 50px;
+  width: 220px;
 }
 .button--link {
   color: #fff;
@@ -378,10 +379,11 @@ template {
 }
 
 .button_menu {
+  box-shadow: 0px 0px 3px #d2d2d2;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 35px;
-  width: 185px;
   height: 50px;
+  width: 185px;
   margin: 50px auto 30px;
 }
 .button_menu--link {

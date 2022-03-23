@@ -10,6 +10,24 @@
     border-radius: 20px 20px 20px 20px;
 }
 
+@mixin btn_bloc_shadow {
+    box-shadow: 0px 0px 3px $colour-border-shadow;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    border-radius: 35px;
+    height: 50px;
+}
+
+@mixin btn-bloc-size {
+    color:$colour-white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin btn-bloc-hover {
+    background: linear-gradient($colour-primary-lighten, $colour-secondary-lighten);
+    box-shadow: 0px 0px 8px $colour-border-shadow;
+}
+
 @mixin hidden_text {
     white-space: nowrap;
     overflow: hidden;
