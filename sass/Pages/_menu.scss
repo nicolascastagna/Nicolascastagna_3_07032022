@@ -37,7 +37,7 @@
             margin-bottom: 30px;
             @include box-shadow;
             position: relative;
-            height: 270px;
+            padding-bottom: 8px;
             overflow: hidden;
             border-radius: 20px;
             &:hover {
@@ -151,6 +151,10 @@
     .order_menu {
         @include box-shadow;
         margin: 20px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
         @include tablet {
             text-align: center;
             margin: 20px auto 20px;
@@ -161,6 +165,11 @@
             font-size: 16px;
             @include hidden_text;
             font-weight: 800;
+            width: 85%;
+            @include tablet {
+                width: 20%;
+                @include center_check;
+            }
         }
         .order_text {
             display: flex;
@@ -172,20 +181,18 @@
             }
             p:nth-child(1) {
                 @include hidden_text;
+                width: 85%;
                 @include tablet {
-                    display: flex;
-                    justify-content: center;
-                    padding-left: 20px;
-                    width: 100%;
+                    width: 20%;
+                    @include center_check;
                 }
             }
                 p:nth-child(2) {
                     font-weight: 900;
+                    width: 10px;
                 }
-            
         }
-    
- }
+    }
 }
 
 .order_menu {
@@ -211,12 +218,16 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 0px 15px 0px 5px;
+    @include tablet {
+        max-width: 750px;
+        margin: auto;
+    }
     h1 {
         font-weight: 500;
         font-size: 26px;
         @include tablet {
-            width: 100%;
-            text-align: center;
+            width: 66%;
+            text-align: end;
         }
     }
     i {
@@ -225,3 +236,10 @@
     }
 }
 
+.order_check {
+    width: 90%;
+}
+
+.menu_container_heart .heart_icons {
+    width: 7%;
+}

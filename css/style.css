@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.bloc_title .title_adress, .bloc_title, .button_menu, .button {
+.bloc_title .title_adress, .bloc_title, .order_menu:hover .menu_check, .button_menu, .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,6 +456,69 @@ template {
     opacity: 1;
   }
 }
+.menu_check {
+  visibility: hidden;
+}
+.menu_check i {
+  color: #fff;
+  font-size: larger;
+}
+
+.order_menu:hover i {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+.order_menu:hover p:nth-child(2) {
+  min-width: 60px;
+  margin-right: -10px;
+  animation: menu_check 500ms;
+  padding-left: 10px;
+}
+@media screen and (min-width: 769px) {
+  .order_menu:hover p:nth-child(2) {
+    min-width: 0;
+    padding-left: 0;
+  }
+  .order_menu:hover p:nth-child(2):hover {
+    max-width: 60px;
+  }
+}
+
+.order_menu:hover .menu_check {
+  visibility: visible;
+  position: absolute;
+  background: #99E2D0;
+  right: 0px;
+  top: 0px;
+  width: 60px;
+  height: 72px;
+  overflow: hidden;
+  animation: menu_check 500ms;
+}
+
+@keyframes menu_check {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 body {
   margin: 0;
 }
@@ -718,7 +781,7 @@ footer .bloc_footer h1 {
   background-color: #fff;
   cursor: pointer;
   position: relative;
-  height: 270px;
+  padding-bottom: 8px;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -835,6 +898,10 @@ footer .bloc_footer h1 {
   background-color: #fff;
   cursor: pointer;
   margin: 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (min-width: 769px) {
   .menu .order_menu {
@@ -850,6 +917,15 @@ footer .bloc_footer h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 800;
+  width: 85%;
+}
+@media screen and (min-width: 769px) {
+  .menu .order_menu h4 {
+    width: 20%;
+    margin: auto;
+    overflow: visible;
+    text-align: start;
+  }
 }
 .menu .order_menu .order_text {
   display: flex;
@@ -864,17 +940,19 @@ footer .bloc_footer h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 85%;
 }
 @media screen and (min-width: 769px) {
   .menu .order_menu .order_text p:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    width: 100%;
+    width: 20%;
+    margin: auto;
+    overflow: visible;
+    text-align: start;
   }
 }
 .menu .order_menu .order_text p:nth-child(2) {
   font-weight: 900;
+  width: 10px;
 }
 
 .order_menu {
@@ -903,18 +981,32 @@ footer .bloc_footer h1 {
   align-items: baseline;
   padding: 0px 15px 0px 5px;
 }
+@media screen and (min-width: 769px) {
+  .menu_container_heart {
+    max-width: 750px;
+    margin: auto;
+  }
+}
 .menu_container_heart h1 {
   font-weight: 500;
   font-size: 26px;
 }
 @media screen and (min-width: 769px) {
   .menu_container_heart h1 {
-    width: 100%;
-    text-align: center;
+    width: 66%;
+    text-align: end;
   }
 }
 .menu_container_heart i {
   font-size: 24px;
+}
+
+.order_check {
+  width: 90%;
+}
+
+.menu_container_heart .heart_icons {
+  width: 7%;
 }
 
 /*# sourceMappingURL=style.css.map */

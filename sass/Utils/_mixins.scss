@@ -16,6 +16,12 @@
     text-overflow: ellipsis;
 }
 
+@mixin center_check {
+    margin: auto;
+    overflow: visible;
+    text-align: start;
+}
+
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
