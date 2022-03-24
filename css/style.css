@@ -746,24 +746,31 @@ footer .bloc_footer h1 {
   padding-top: 10px;
   padding-bottom: 40px;
 }
-.container_functioning i {
+
+i {
   font-size: 18px;
 }
-.container_functioning #title_functioning {
+
+#title_functioning {
   width: 95%;
   font-weight: 800;
 }
 @media screen and (min-width: 769px) {
-  .container_functioning #title_functioning {
+  #title_functioning {
     text-align: center;
-    padding-left: 21px;
     width: 100%;
+    padding-left: 10px;
   }
 }
 
 .functioning_text {
   width: 72%;
   font-weight: 700;
+}
+@media screen and (min-width: 769px) {
+  .functioning_text {
+    width: 83%;
+  }
 }
 
 .functioning_element_number {
@@ -793,6 +800,11 @@ footer .bloc_footer h1 {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 769px) {
+  .container_menu {
+    width: 100%;
+  }
+}
 .container_menu h2 {
   font-weight: 800;
 }
@@ -809,6 +821,8 @@ footer .bloc_footer h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
+    width: 90%;
+    margin: auto;
   }
 }
 .container_menu .menu_list .menu_new {
