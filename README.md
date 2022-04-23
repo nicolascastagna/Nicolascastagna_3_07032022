@@ -1,6 +1,6 @@
-# Projet 3 Ohmyfood! :
+# Projet 3 Dynamisez une page web avec des animations CSS - Ohmyfood!:
 
-3ème projet d'Openclassrooms, réalisé au mois de Mars 2022
+3ème projet d'Openclassrooms - réalisé au mois de Mars 2022
 
 - Intégration de maquette mobile en HTML et CSS, SCSS, 
 - Interfaces responsives mobile-first puis tablette/desktop,
